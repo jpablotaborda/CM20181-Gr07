@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="co.edu.udea.compumovil.gr07_20181.lab1.Menurest">
+        <activity android:name=".Menurest">
+
+        </activity>
+        <activity android:name=".SplashScreen" android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
