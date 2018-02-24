@@ -1,7 +1,9 @@
-package co.edu.udea.compumovil.gr07_20181.lab1;
+package co.edu.udea.compumovil.gr07_20181.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import co.edu.udea.compumovil.gr07_20181.lab1.R;
 
 public class ven_bebidas extends AppCompatActivity {
 

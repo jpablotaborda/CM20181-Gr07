@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menurest" />
+        <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.Menurest" />
         <activity
-            android:name=".SplashScreen"
+            android:name="co.edu.udea.compumovil.gr07_20181.Activities.SplashScreen"
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,8 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ven_platos" />
-        <activity android:name=".ven_bebidas"></activity>
+        <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.ven_platos" />
+        <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.ven_bebidas" />
+        <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.cardplatos"></activity>
     </application>
 
 </manifest>

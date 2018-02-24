@@ -4,6 +4,34 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".ven_platos">
+    android:orientation="vertical"
+tools:context="co.edu.udea.compumovil.gr07_20181.Activities.ven_platos"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        >
+
+
+    </RelativeLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollplatos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerplatos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbarSize="5dp"
+            ></android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.NestedScrollView>
+
 
 </LinearLayout>

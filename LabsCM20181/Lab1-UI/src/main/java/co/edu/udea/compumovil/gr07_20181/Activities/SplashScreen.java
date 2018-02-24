@@ -1,4 +1,4 @@
-package co.edu.udea.compumovil.gr07_20181.lab1;
+package co.edu.udea.compumovil.gr07_20181.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
