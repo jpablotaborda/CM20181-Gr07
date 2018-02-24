@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LabsCM20181</string>
+    <string name="bot_platos">Platos</string>
+    <string name="bot_bebidas">Bebidas</string>
 </resources>
