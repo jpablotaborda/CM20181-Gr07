@@ -2,4 +2,26 @@
     <string name="app_name">LabsCM20181</string>
     <string name="bot_platos">Platos</string>
     <string name="bot_bebidas">Bebidas</string>
+    <string name="lbplato_nombre">Plato:</string>
+    <string name="lbplato_horario">Horario:</string>
+    <string name="lbplato_tipo">Tipo:</string>
+    <string name="lbplato_tiempre">Tiempo Preparación:</string>
+    <string name="lbplato_precio">Precio:</string>
+    <string name="lbplato_ingredientes">Ingredientes:</string>
+    <string name="tit_reg_platos">Registrar Platos</string>
+    <string name="nom_platoreg">Nombre:</string>
+    <string name="horario_platoreg">Horario:</string>
+    <string name="horario_platocheckmanana">Mañana</string>
+    <string name="horario_platochecktarde">Tarde</string>
+    <string name="horario_platochecknoche">Noche</string>
+    <string name="tipoplatoreg">Tipo:</string>
+    <string name="tipoplatocheckentrada">Entrada</string>
+    <string name="tipoplatocheckplafuerte">Plato Fuerte</string>
+    <string name="tiempre_platoreg">Tiempo Preparación:</string>
+    <string name="bot_tiempre_platoreg">Seleccionar</string>
+    <string name="precio_platoreg">Precio:</string>
+    <string name="foto_platoreg">Foto:</string>
+    <string name="bot_foto_platoreg">Seleccionar</string>
+    <string name="bot_regplato">Registrar Plato</string>
+    <string name="ingredientes_platoreg">Ingredientes</string>
 </resources>
