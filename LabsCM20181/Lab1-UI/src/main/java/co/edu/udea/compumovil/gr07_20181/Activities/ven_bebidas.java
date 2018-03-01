@@ -56,9 +56,9 @@ public class ven_bebidas extends AppCompatActivity implements View.OnClickListen
 
     private void iniciar_lista() {
         lista_bebidas= new ArrayList<>();
-        lista_bebidas.add(new Bebida(R.drawable.rancheros,"Frijoles Rancheros","- Frijoles, - Salchicha Ranchera, - Zanahoria, -Platano, -Chicharron","12.000$"));
-        lista_bebidas.add(new Bebida(R.drawable.rancheros,"Frijoles Rancheros","- Frijoles, - Salchicha Ranchera, - Zanahoria, -Platano, -Chicharron","12.000$"));
-        lista_bebidas.add(new Bebida(R.drawable.rancheros,"Frijoles Rancheros","- Frijoles, - Salchicha Ranchera, - Zanahoria, -Platano, -Chicharron","12.000$"));
+        lista_bebidas.add(new Bebida(Image_uri,"Frijoles Rancheros","- Frijoles, - Salchicha Ranchera, - Zanahoria, -Platano, -Chicharron","12.000$"));
+        lista_bebidas.add(new Bebida(Image_uri,"Frijoles Rancheros","- Frijoles, - Salchicha Ranchera, - Zanahoria, -Platano, -Chicharron","12.000$"));
+        lista_bebidas.add(new Bebida(Image_uri,"Frijoles Rancheros","- Frijoles, - Salchicha Ranchera, - Zanahoria, -Platano, -Chicharron","12.000$"));
     }
 
     @Override

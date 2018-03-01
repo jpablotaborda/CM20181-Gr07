@@ -1,23 +1,25 @@
 package co.edu.udea.compumovil.gr07_20181.Models;
 
+import android.net.Uri;
+
 /**
  * Created by Juan Pablo on 24/02/2018.
  */
 
 public class Bebida {
-    private int foto_url;
+    private Uri foto_url;
     private String nombre;
     private String ingredientes;
     private String precio;
 
-    public Bebida(int ft,String nom,String ingre,String pre ){
+    public Bebida(Uri ft,String nom,String ingre,String pre ){
         this.foto_url =ft ;
         this.nombre = nom ;
         this.ingredientes= ingre;
         this.precio =pre ;
     }
 
-    public int getFoto_url() {
+    public Uri getFoto_url() {
         return foto_url;
     }
 

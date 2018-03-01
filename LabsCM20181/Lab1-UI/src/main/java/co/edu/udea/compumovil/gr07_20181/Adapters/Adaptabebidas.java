@@ -13,6 +13,7 @@ import java.util.List;
 import co.edu.udea.compumovil.gr07_20181.Models.Bebida;
 import co.edu.udea.compumovil.gr07_20181.lab1.R;
 
+
 /**
  * Created by jose-gm on 28/02/18.
  */
@@ -32,7 +33,7 @@ public class Adaptabebidas extends RecyclerView.Adapter<Adaptabebidas.bebidaview
 
     @Override
     public void onBindViewHolder(bebidaviewholder holder, int position) {
-        holder.bebidafot.setImageResource(bebidas.get(position).getFoto_url());
+        holder.bebidafot.setImageURI(bebidas.get(position).getFoto_url());
         holder.bebidanombre.setText(bebidas.get(position).getNombre());
         holder.bebidaingre.setText(bebidas.get(position).getIngredientes());
         holder.bebidapre.setText(bebidas.get(position).getPrecio());

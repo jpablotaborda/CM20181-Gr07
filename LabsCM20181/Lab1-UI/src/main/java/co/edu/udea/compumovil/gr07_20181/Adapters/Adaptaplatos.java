@@ -32,7 +32,7 @@ public class Adaptaplatos extends RecyclerView.Adapter<Adaptaplatos.platoviewhol
 
     @Override
     public void onBindViewHolder(platoviewholder holder, int position) {
-        holder.platofot.setImageResource(platos.get(position).getFoto_url());
+        holder.platofot.setImageURI(platos.get(position).getFoto_url());
         holder.platonombre.setText(platos.get(position).getNombre());
         holder.platohora.setText(platos.get(position).getHorario());
         holder.platotipo.setText(platos.get(position).getTipo());
