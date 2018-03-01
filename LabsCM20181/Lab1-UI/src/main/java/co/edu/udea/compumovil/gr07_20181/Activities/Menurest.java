@@ -3,6 +3,7 @@ package co.edu.udea.compumovil.gr07_20181.Activities;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
@@ -19,6 +20,9 @@ public class Menurest extends AppCompatActivity implements View.OnClickListener 
 
         bot_platos.setOnClickListener(this);
         bot_bebidas.setOnClickListener(this);
+        Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("LabsCM20181");
     }
 
     @Override

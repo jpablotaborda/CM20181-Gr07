@@ -5,20 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    tools:context="co.edu.udea.compumovil.gr07_20181.lab1.co.edu.udea.compumovil.gr07_20181.lab1.Menurest">
+    tools:context="co.edu.udea.compumovil.gr07_20181.Activities.Menurest">
 
+    <include
+        layout="@layout/toolbar"
+         />
     <Button
+        android:layout_marginTop="200dp"
         android:id="@+id/bot_platos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="30dp"
-        android:text="@string/bot_platos"/>
+        android:text="@string/bot_platos"
+
+        android:layout_gravity="center"
+
+
+       />
     <Button
         android:id="@+id/bot_bebidas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="30dp"
-        android:text="@string/bot_bebidas"/>
+        android:text="@string/bot_bebidas"
+
+        android:layout_gravity="center"/>
 
 </LinearLayout>
