@@ -28,6 +28,7 @@ public class ven_platos extends AppCompatActivity implements View.OnClickListene
     private List<Plato> lista_platos;
     private static final int SELECCIONAR_IMAGEN=100;
     private Uri Image_uri=null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

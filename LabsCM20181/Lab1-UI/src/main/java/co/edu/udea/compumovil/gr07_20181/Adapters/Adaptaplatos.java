@@ -39,7 +39,6 @@ public class Adaptaplatos extends RecyclerView.Adapter<Adaptaplatos.platoviewhol
         holder.platotiempre.setText(platos.get(position).getTiem_pre());
         holder.platopre.setText(platos.get(position).getPrecio());
         holder.platoingre.setText(platos.get(position).getIngredientes());
-
     }
 
     @Override
@@ -60,7 +59,7 @@ public class Adaptaplatos extends RecyclerView.Adapter<Adaptaplatos.platoviewhol
         public platoviewholder(View itemView) {
             super(itemView);
 
-             platocard=(CardView) itemView.findViewById(R.id.cardplatos);
+            platocard=(CardView) itemView.findViewById(R.id.cardplatos);
             platofot=(ImageView) itemView.findViewById(R.id.platos_foto);
             platonombre=(TextView) itemView.findViewById(R.id.platos_nombre) ;
             platohora=(TextView)itemView.findViewById(R.id.platos_horario);
@@ -70,9 +69,5 @@ public class Adaptaplatos extends RecyclerView.Adapter<Adaptaplatos.platoviewhol
             platoingre=(TextView)itemView.findViewById(R.id.platos_ingredientes) ;
 
         }
-
-
-
     }
-
 }
