@@ -141,6 +141,7 @@ public class ven_platos extends AppCompatActivity implements View.OnClickListene
 
                     lista_platos.add(new Plato(nom_plato.getText().toString(),hora,tipo,precio_pla.getText().toString(),ingredientes_pla.getText().toString(),Integer.toString(picker.tiempre) + " min",Image_uri));
 
+
                     if(primeravez){
                         adap_recycler_platos= new Adaptaplatos(lista_platos);
                         recyclerplatos.setVisibility(View.VISIBLE);

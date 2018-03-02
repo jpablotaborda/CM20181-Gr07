@@ -13,7 +13,6 @@ import java.util.List;
 import co.edu.udea.compumovil.gr07_20181.Models.Bebida;
 import co.edu.udea.compumovil.gr07_20181.lab1.R;
 
-
 /**
  * Created by jose-gm on 28/02/18.
  */

@@ -7,11 +7,12 @@
     android:orientation="vertical"
     tools:context="co.edu.udea.compumovil.gr07_20181.Activities.ven_bebidas">
 
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7"
-        android:orientation="vertical">
+        android:layout_weight="7">
+
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -93,7 +94,7 @@
                 android:text="Seleccionar" />
 
             <Button
-                android:id="@+id/bot_regbebidas"
+                android:id="@+id/bot_regbebida"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/foto_bebidareg"
@@ -103,7 +104,7 @@
 
 
         </RelativeLayout>
-    </LinearLayout>
+    </ScrollView>
 
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/scrollbebidas"
@@ -116,7 +117,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="vertical"
-            android:scrollbarSize="5dp"/>
+            android:scrollbarSize="5dp"
+            ></android.support.v7.widget.RecyclerView>
     </android.support.v4.widget.NestedScrollView>
 
 </LinearLayout>

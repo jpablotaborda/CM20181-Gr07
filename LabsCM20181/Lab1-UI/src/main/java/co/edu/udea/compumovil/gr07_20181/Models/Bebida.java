@@ -2,9 +2,9 @@ package co.edu.udea.compumovil.gr07_20181.Models;
 
 import android.net.Uri;
 
-/**
- * Created by Juan Pablo on 24/02/2018.
- */
+
+
+
 
 public class Bebida {
     private Uri foto_url;

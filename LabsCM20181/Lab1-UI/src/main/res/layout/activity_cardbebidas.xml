@@ -19,7 +19,7 @@
             android:adjustViewBounds="true" />
 
         <TextView
-            android:id="@+id/labelbebida_nombre"
+            android:id="@+id/lbbebida_nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/bebidas_foto"
@@ -29,14 +29,14 @@
             android:id="@+id/bebidas_nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/labelbebida_nombre"
+            android:layout_toRightOf="@id/lbbebida_nombre"
             android:layout_marginLeft="5dp"/>
 
         <TextView
-            android:id="@+id/labelbebida_ingredientes"
+            android:id="@+id/lbbebida_ingredientes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/labelbebida_nombre"
+            android:layout_below="@id/lbbebida_nombre"
             android:layout_toRightOf="@id/bebidas_foto"
             android:text="Ingredientes" />
 
@@ -44,15 +44,15 @@
             android:id="@+id/bebidas_ingredientes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/labelbebida_nombre"
-            android:layout_toRightOf="@id/labelbebida_ingredientes"
+            android:layout_below="@id/lbbebida_nombre"
+            android:layout_toRightOf="@id/lbbebida_ingredientes"
             android:layout_marginLeft="5dp" />
 
         <TextView
-            android:id="@+id/labelbebida_precio"
+            android:id="@+id/lbbebida_precio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/labelbebida_ingredientes"
+            android:layout_below="@id/lbbebida_ingredientes"
             android:layout_toRightOf="@id/bebidas_foto"
             android:text="Precio" />
 
@@ -60,8 +60,8 @@
             android:id="@+id/bebidas_precio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/labelbebida_ingredientes"
-            android:layout_toRightOf="@id/labelbebida_precio"
+            android:layout_below="@id/lbbebida_ingredientes"
+            android:layout_toRightOf="@id/lbbebida_precio"
             android:layout_marginLeft="5dp" />
 
     </RelativeLayout>
