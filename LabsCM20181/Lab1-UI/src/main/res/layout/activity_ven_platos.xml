@@ -40,6 +40,8 @@ tools:context="co.edu.udea.compumovil.gr07_20181.Activities.ven_platos"
                 android:layout_alignBaseline="@id/nom_platoreg"
                 android:layout_below="@id/tit_reg_platos"
                 android:layout_toRightOf="@id/nom_platoreg"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/radiogrplatoreg"
                 />
 
             <TextView

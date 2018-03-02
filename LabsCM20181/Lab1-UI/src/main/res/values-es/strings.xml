@@ -29,4 +29,11 @@
     <string name="titulo_picker_tiempre">Tiempo de preparación</string>
     <string name="limpiar_menu">Limpiar</string>
     <string name="salir_menu">Salir</string>
+    <string name="registrar_Bebidas">Registrar Bebidas</string>
+    <string name="nombre_bebida">Nombre:</string>
+    <string name="precio_bebidas">Precio:</string>
+    <string name="selec_precio_bebida">Seleccionar</string>
+    <string name="bot_registrar_Bebida">Registrar Bebida</string>
+    <string name="foto_bebida">Foto:</string>
+    <string name="ingredientes_bebidas">Ingredientes</string>
 </resources>

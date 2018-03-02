@@ -16,7 +16,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -58,7 +60,11 @@ public class ven_bebidas extends AppCompatActivity implements View.OnClickListen
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
 
+        //seteando toolbar
+        Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
+        getSupportActionBar().setTitle(R.string.app_name);
 
 
         // Implementando métodos del formulaio registro de bebidas
@@ -136,6 +142,39 @@ public class ven_bebidas extends AppCompatActivity implements View.OnClickListen
             Image_uri=data.getData();
 
         }
+
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.limpiar_menu:
+                Limpiar();
+                break;
+            case R.id.salir_menu :
+                this.finish();
+                break;
+        }
+        return true;
+    }
+
+    private void Limpiar() {
+
+        EditText nom_bebida= (EditText) findViewById(R.id.edit_nom);
+
+        EditText precio_pla= (EditText) findViewById(R.id.edit_precio);
+        EditText ingredientes_bebida= (EditText) findViewById(R.id.edit_ingredientes);
+        nom_bebida.setText("");
+        Image_uri=null;
+        precio_pla.setText("");
+        ingredientes_bebida.setText("");
+
+
+
 
     }
 }

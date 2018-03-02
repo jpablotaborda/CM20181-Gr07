@@ -22,14 +22,15 @@
             android:id="@+id/lbbebida_nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/bebidas_foto"
-            android:text="Nombre" />
+            android:layout_below="@id/bebidas_foto"
+            android:text="@string/nombre_bebida" />
 
         <TextView
             android:id="@+id/bebidas_nombre"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/lbbebida_nombre"
+            android:layout_below="@id/bebidas_foto"
             android:layout_marginLeft="5dp"/>
 
         <TextView
@@ -37,12 +38,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/lbbebida_nombre"
-            android:layout_toRightOf="@id/bebidas_foto"
-            android:text="Ingredientes" />
+            android:text="@string/ingredientes_bebidas" />
 
         <TextView
             android:id="@+id/bebidas_ingredientes"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/lbbebida_nombre"
             android:layout_toRightOf="@id/lbbebida_ingredientes"
@@ -53,12 +53,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/lbbebida_ingredientes"
-            android:layout_toRightOf="@id/bebidas_foto"
-            android:text="Precio" />
+            android:text="@string/precio_bebidas" />
 
         <TextView
             android:id="@+id/bebidas_precio"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/lbbebida_ingredientes"
             android:layout_toRightOf="@id/lbbebida_precio"
