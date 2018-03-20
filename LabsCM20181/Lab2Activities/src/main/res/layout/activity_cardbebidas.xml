@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardbebidas"
+    tools:context="co.edu.udea.compumovil.gr07_20181.Activities.cardbebidas">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/bebidas_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/lbbebida_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bebidas_foto"
+            android:text="@string/nombre_bebida" />
+
+        <TextView
+            android:id="@+id/bebidas_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lbbebida_nombre"
+            android:layout_below="@id/bebidas_foto"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/lbbebida_ingredientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbbebida_nombre"
+            android:text="@string/ingredientes_bebidas" />
+
+        <TextView
+            android:id="@+id/bebidas_ingredientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbbebida_nombre"
+            android:layout_toRightOf="@id/lbbebida_ingredientes"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/lbbebida_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbbebida_ingredientes"
+            android:text="@string/precio_bebidas" />
+
+        <TextView
+            android:id="@+id/bebidas_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbbebida_ingredientes"
+            android:layout_toRightOf="@id/lbbebida_precio"
+            android:layout_marginLeft="5dp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

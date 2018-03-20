@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="co.edu.udea.compumovil.gr07_20181.Activities.ven_registro">
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <TextView
+        android:id="@+id/tit_reg_usuarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tit_reg_usuario"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+         android:layout_marginTop="40dp"   />
+        <TextView
+            android:id="@+id/lbl_nom_usu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_nom_usu"
+            android:layout_below="@id/tit_reg_usuarios"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/edit_nom_reg_usu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tit_reg_usuarios"
+            android:layout_toRightOf="@id/lbl_nom_usu"
+            android:layout_alignBaseline="@id/lbl_nom_usu"/>
+        <TextView
+            android:id="@+id/lbl_correo_usu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_nom_correo"
+            android:layout_below="@id/lbl_nom_usu"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/edit_correo_reg_usu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tit_reg_usuarios"
+            android:layout_toRightOf="@id/lbl_correo_usu"
+            android:layout_alignBaseline="@id/lbl_correo_usu"/>
+        <TextView
+            android:id="@+id/lbl_contra_usu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_contra_usu"
+            android:layout_below="@id/lbl_correo_usu"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/edit_contra_reg_usu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tit_reg_usuarios"
+            android:layout_toRightOf="@id/lbl_contra_usu"
+            android:layout_alignBaseline="@id/lbl_contra_usu"/>
+        <TextView
+            android:id="@+id/lbl_selec_foto_usu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_selec_foto_usu"
+            android:layout_below="@id/lbl_contra_usu"
+            android:layout_marginTop="25dp"/>
+        <Button
+            android:id="@+id/bot_sel_foto_usu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lbl_selec_foto_usu"
+            android:layout_alignBaseline="@id/lbl_selec_foto_usu"
+            android:text="@string/bot_sel_foto_usu"/>
+        <Button
+            android:id="@+id/bot_reg_usu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_selec_foto_usu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/bot_reg_usu"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
