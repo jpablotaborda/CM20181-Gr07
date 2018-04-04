@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/flecha_arriba"
-        android:layout_toLeftOf="@id/text_min_tiempre"/>
+        />
 
     <ImageView
         android:id="@+id/flecha_abajo"
@@ -37,7 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_min_tiempre"
-        android:layout_toRightOf="@id/flecha_abajo"
+
+        android:layout_alignLeft="@id/flecha_abajo"
         android:layout_alignBaseline="@id/text_tiempre"/>
     <Button
         android:id="@+id/bot_tiempre_picker"

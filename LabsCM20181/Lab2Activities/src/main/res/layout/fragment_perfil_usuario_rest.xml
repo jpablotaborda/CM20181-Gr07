@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.edu.udea.compumovil.gr07_20181.Activities.perfil_usuario_rest"
+    android:padding="30dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tit_perfil_usu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tit_perf_usuario"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        />
+    <ImageView
+        android:id="@+id/imageview_perfil_usu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tit_perfil_usu"
+        android:cropToPadding="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+
+
+        />
+    <TextView
+
+        android:id="@+id/lab_per_nom_usu"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lab_per_nom_usu"
+        android:layout_below="@id/imageview_perfil_usu"/>
+    <TextView
+        android:id="@+id/per_nom_usu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lab_per_nom_usu"
+        android:layout_alignBaseline="@id/lab_per_nom_usu"
+        />
+    <TextView
+        android:id="@+id/lab_per_correo_usu"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lab_per_correo_usu"
+        android:layout_below="@id/lab_per_nom_usu"/>
+    <TextView
+        android:id="@+id/per_correo_usu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lab_per_correo_usu"
+        android:layout_alignBaseline="@id/lab_per_correo_usu"
+        />
+
+</RelativeLayout>

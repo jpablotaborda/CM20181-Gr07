@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="co.edu.udea.compumovil.gr07_20181.Activities.naviga_drawer_restau"
-    tools:showIn="@layout/app_bar_naviga_drawer_restau">
+    tools:context="co.edu.udea.compumovil.gr07_20181.Activities.nd_restaurant"
+    tools:showIn="@layout/app_bar_nd_restaurant">
 
 </android.support.constraint.ConstraintLayout>

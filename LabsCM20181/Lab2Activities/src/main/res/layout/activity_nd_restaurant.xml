@@ -9,17 +9,17 @@
     tools:openDrawer="start">
 
     <include
-        layout="@layout/app_bar_naviga_drawer_restau"
+        layout="@layout/app_bar_nd_restaurant"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <android.support.design.widget.NavigationView
-        android:id="@+id/nav_view"
+        android:id="@+id/nav_viewnd"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="left"
+        android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_naviga_drawer_restau"
-        app:menu="@menu/activity_naviga_drawer_restau_drawer" />
+        app:headerLayout="@layout/nav_header_nd_restaurant"
+        app:menu="@menu/activity_nd_restaurant_drawer" />
 
 </android.support.v4.widget.DrawerLayout>

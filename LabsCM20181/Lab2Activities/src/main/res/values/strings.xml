@@ -56,7 +56,17 @@
     <string name="nd_perfil">Perfil</string>
     <string name="nd_platos">Platos</string>
     <string name="nd_bebidas">Bebidas</string>
-    <string name="nd_configuracion">Configuración</string>
+    <string name="nd_configuracion">Configuraciones</string>
     <string name="nd_acercade">Acerca de</string>
     <string name="nd_cerrar_ses">Cerrar Sesión</string>
+    <string name="title_activity_nd_restaurant">nd_restaurant</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nd_plato">Platos</string>
+    <string name="nd_bebida">Bebidas</string>
+    <string name="nd_cerrar_sesion">Cerrar Sesión</string>
+    <string name="tit_perf_usuario">Perfil de Usuario</string>
+    <string name="lab_per_nom_usu">Nombre:</string>
+    <string name="lab_per_correo_usu">Correo:</string>
 </resources>

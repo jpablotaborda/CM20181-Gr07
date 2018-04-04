@@ -15,12 +15,12 @@ public class Plato {
     private String precio;
     private String ingredientes;
 
-    public Plato(String nom,String hora,String tipo,String pre,String ingre,String tp, Uri ft){
+    public Plato(Uri ft,String nom,String hora,String tipo,String tp,String pre,String ingre){
         this.foto_url =ft ;
         this.nombre = nom ;
         this.horario =hora ;
         this.tipo = tipo;
-        this. tiem_pre= tp;
+        this.tiem_pre= tp;
         this.precio =pre ;
         this. ingredientes= ingre;
 

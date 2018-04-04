@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="co.edu.udea.compumovil.gr07_20181.Activities.ven_bebidas">
 
-    <include layout= "@layout/toolbar"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"

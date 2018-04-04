@@ -32,9 +32,7 @@ public class ven_inicio_sesion extends AppCompatActivity implements View.OnClick
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("LabsCM20181");
 
-        //DrawerLayout mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        //mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
-        //mDrawerLayout.openDrawer(Gravity.START);
+
     }
 
     @Override
@@ -67,9 +65,11 @@ public class ven_inicio_sesion extends AppCompatActivity implements View.OnClick
                         c = db.rawQuery("SELECT " + campos[0] + "," + campos[1] + " FROM Usuarios WHERE nombre= '" + parametros[0] + "' AND contrasena='" + parametros[1] + "'", null);
                         c.moveToFirst();
                         if (c.getString(0).equals(parametros[0]) && c.getString(1).equals(parametros[1])){
-                            Intent lanzar_menu= new Intent(this,Menurest.class);
+                            Intent lanzar_menu= new Intent(this,nd_restaurant.class);
+                            lanzar_menu.putExtra("usuario",c.getString(0));
+                            lanzar_menu.putExtra("contrasena",c.getString(1));
                             startActivity(lanzar_menu);
-                            this.finish();
+
                         }
                     }catch (Exception e){
                         Toast.makeText(this, "No coinciden usuario y contraseña", Toast.LENGTH_SHORT).show();
@@ -79,9 +79,7 @@ public class ven_inicio_sesion extends AppCompatActivity implements View.OnClick
 
 
                 break;
-            /*case R.id.tit_inicio_ses:
-                DrawerLayout drawer= (DrawerLayout) findViewById(R.id.drawer_layout);
-                drawer.openDrawer(Gravity.LEFT);*/
+
         }
     }
 }

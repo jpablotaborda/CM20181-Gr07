@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.Menurest" />
         <activity
             android:name="co.edu.udea.compumovil.gr07_20181.Activities.SplashScreen"
             android:theme="@style/SplashScreen">
@@ -19,15 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.ven_platos" />
-        <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.ven_bebidas" />
+
         <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.cardplatos" />
         <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.ven_registro" />
         <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.ven_inicio_sesion" />
         <activity
-            android:name="co.edu.udea.compumovil.gr07_20181.Activities.naviga_drawer_restau"
-            android:label="@string/title_activity_naviga_drawer_restau"
+            android:name="co.edu.udea.compumovil.gr07_20181.Activities.nd_restaurant"
+            android:label="@string/title_activity_nd_restaurant"
             android:theme="@style/AppTheme"></activity>
+        <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.configuracion" />
     </application>
 
 </manifest>

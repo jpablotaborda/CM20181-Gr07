@@ -45,9 +45,8 @@ public class ven_registro extends AppCompatActivity implements View.OnClickListe
         Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("LabsCM20181");
-        //Desactivando navigation drawer
-        DrawerLayout mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+
+
 
 
 
