@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <item
+        android:id="@+id/buscar_nombre"
+        android:icon="@drawable/buscar_nombre"
+        android:title="@string/buscar_nombre"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/buscar_precio"
+        android:icon="@drawable/buscar_precio"
+        android:title="@string/buscar_precio"
+        app:showAsAction="always" />
+
+
+</menu>

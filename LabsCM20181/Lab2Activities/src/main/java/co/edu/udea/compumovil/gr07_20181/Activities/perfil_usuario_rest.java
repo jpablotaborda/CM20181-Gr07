@@ -56,8 +56,8 @@ public class perfil_usuario_rest extends Fragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.findItem(R.id.limpiar_menu).setVisible(false);
-        menu.findItem(R.id.salir_menu).setVisible(false);
+        menu.findItem(R.id.buscar_precio).setVisible(false);
+        menu.findItem(R.id.buscar_nombre).setVisible(false);
         super.onCreateOptionsMenu(menu, inflater);
     }
 

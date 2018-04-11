@@ -18,15 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.cardplatos" />
         <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.ven_registro" />
         <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.ven_inicio_sesion" />
         <activity
             android:name="co.edu.udea.compumovil.gr07_20181.Activities.nd_restaurant"
             android:label="@string/title_activity_nd_restaurant"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.configuracion" />
+        <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.ven_platos" />
+        <activity android:name="co.edu.udea.compumovil.gr07_20181.Activities.ven_bebidas"></activity>
     </application>
 
 </manifest>

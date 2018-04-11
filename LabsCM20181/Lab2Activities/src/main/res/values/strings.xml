@@ -69,4 +69,6 @@
     <string name="tit_perf_usuario">Perfil de Usuario</string>
     <string name="lab_per_nom_usu">Nombre:</string>
     <string name="lab_per_correo_usu">Correo:</string>
+    <string name="buscar_nombre">Buscar Nombre</string>
+    <string name="buscar_precio">Buscar Precio</string>
 </resources>

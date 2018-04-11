@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="co.edu.udea.compumovil.gr07_20181.Activities.ven_bebidas">
 
-
+    <include layout="@layout/toolbar"></include>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -111,19 +111,5 @@
         </RelativeLayout>
     </ScrollView>
 
-    <android.support.v4.widget.NestedScrollView
-        android:id="@+id/scrollbebidas"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="4">
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerbebidas"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbars="vertical"
-            android:scrollbarSize="5dp"
-            ></android.support.v7.widget.RecyclerView>
-    </android.support.v4.widget.NestedScrollView>
 
 </LinearLayout>

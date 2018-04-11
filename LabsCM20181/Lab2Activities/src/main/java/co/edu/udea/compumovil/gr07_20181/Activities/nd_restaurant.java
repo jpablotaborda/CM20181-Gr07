@@ -115,7 +115,7 @@ public class nd_restaurant extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu,menu);
+        getMenuInflater().inflate(R.menu.menubuscar,menu);
         return true;
     }
 
@@ -135,6 +135,12 @@ public class nd_restaurant extends AppCompatActivity
         if (id == R.id.salir_menu) {
             return false;
         }
+        if (id == R.id.buscar_nombre) {
+            return false;
+        }
+        if (id == R.id.buscar_precio) {
+            return false;
+        }
 
 
         return false;
@@ -149,16 +155,16 @@ public class nd_restaurant extends AppCompatActivity
             Toolbar barra= (Toolbar) findViewById(R.id.toolbarnd);
 
             if (id == R.id.nd_plato) {
-                ven_platos venPlatos= new ven_platos();
-                transaction.replace(R.id.framlay_nav_drag,venPlatos);
-                barra.inflateMenu(R.menu.menu);
+                listaplatos listapla= new listaplatos();
+                transaction.replace(R.id.framlay_nav_drag,listapla);
+                barra.inflateMenu(R.menu.menubuscar);
                 setSupportActionBar(barra);
 
 
             } else if (id == R.id.nd_bebida) {
-                ven_bebidas venBebidas= new ven_bebidas();
-                transaction.replace(R.id.framlay_nav_drag,venBebidas);
-                barra.inflateMenu(R.menu.menu);
+                listabebidas listabe= new listabebidas();
+                transaction.replace(R.id.framlay_nav_drag,listabe);
+                barra.inflateMenu(R.menu.menubuscar);
                 setSupportActionBar(barra);
 
             } else if (id == R.id.nd_perfil) {
