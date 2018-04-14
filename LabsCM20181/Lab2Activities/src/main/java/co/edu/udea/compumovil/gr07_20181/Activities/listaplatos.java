@@ -74,7 +74,7 @@ public class listaplatos extends Fragment implements View.OnClickListener {
 
 
         }
-        adap_recycler_platos= new Adaptaplatos(lista_platos);
+        adap_recycler_platos= new Adaptaplatos(getContext(),lista_platos);
         recyclerplatos.setVisibility(View.VISIBLE);
         recyclerplatos.setAdapter(adap_recycler_platos);
 

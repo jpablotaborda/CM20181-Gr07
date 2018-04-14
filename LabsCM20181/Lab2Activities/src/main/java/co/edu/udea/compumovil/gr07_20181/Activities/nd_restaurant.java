@@ -157,6 +157,7 @@ public class nd_restaurant extends AppCompatActivity
             if (id == R.id.nd_plato) {
                 listaplatos listapla= new listaplatos();
                 transaction.replace(R.id.framlay_nav_drag,listapla);
+
                 barra.inflateMenu(R.menu.menubuscar);
                 setSupportActionBar(barra);
 
@@ -182,6 +183,7 @@ public class nd_restaurant extends AppCompatActivity
                 Toast.makeText(this, "Sistema desarrollado para: Restaurantes asados y bebidas, En el curso de computación movil. 2018.", Toast.LENGTH_LONG).show();
 
             }
+            transaction.addToBackStack(null);
             transaction.commit();
 
 

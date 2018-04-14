@@ -71,4 +71,8 @@
     <string name="lab_per_correo_usu">Correo:</string>
     <string name="buscar_nombre">Buscar Nombre</string>
     <string name="buscar_precio">Buscar Precio</string>
+    <string name="det_tit_detalles">Detalles del plato</string>
+    <string name="det_tit_detalles_bebi">Detalles de Bebida</string>
+    <string name="det_bebida_favorito">Favorito:</string>
+    <string name="det_plato_favorito">Favorito:</string>
 </resources>

@@ -74,7 +74,7 @@ public class listabebidas extends Fragment implements View.OnClickListener {
 
 
         }
-        adap_recycler_bebidas= new Adaptabebidas(lista_bebidas);
+        adap_recycler_bebidas= new Adaptabebidas(getContext(),lista_bebidas);
         recyclerbebidas.setVisibility(View.VISIBLE);
         recyclerbebidas.setAdapter(adap_recycler_bebidas);
 

@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.edu.udea.compumovil.gr07_20181.Activities.detallebebidas"
+    android:padding="80dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/det_tit_detalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/det_tit_detalles_bebi"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/det_bebidas_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/det_tit_detalles"
+
+        />
+    <TextView
+        android:id="@+id/det_lbbebida_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_bebida"
+        android:layout_below="@id/det_bebidas_foto"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/det_bebidas_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/det_lbbebida_nombre"
+        android:layout_toRightOf="@id/det_lbbebida_nombre"
+        android:layout_alignTop="@id/det_lbbebida_nombre"
+        android:layout_marginLeft="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/det_lbbebida_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/precio_bebidas"
+        android:layout_below="@id/det_lbbebida_nombre"/>
+    <TextView
+        android:id="@+id/det_bebidas_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/det_lbbebida_precio"
+        android:layout_alignTop="@id/det_lbbebida_precio"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/det_lbbebida_ingredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredientes_bebidas"
+        android:layout_below="@id/det_lbbebida_precio"/>
+
+    <TextView
+        android:id="@+id/det_bebidas_ingredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/det_lbbebida_ingredientes"
+        android:layout_alignTop="@id/det_lbbebida_ingredientes"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/det_bebidas_favorito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/det_bebida_favorito"
+        android:layout_below="@id/det_lbbebida_ingredientes"
+        android:layout_marginTop="6dp"/>
+    <ImageView
+        android:id="@+id/det_bebidas_bot_favorito"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/favon"
+        android:layout_toRightOf="@id/det_bebidas_favorito"
+        android:layout_below="@id/det_lbbebida_ingredientes"/>
+
+</RelativeLayout>
