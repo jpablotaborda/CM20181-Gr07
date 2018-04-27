@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <PreferenceCategory android:title="Modificar Cuenta">
+        <EditTextPreference
+            android:key="cam_contrasena"
+            android:title="Cambiar Contraseña"
+            android:summary="Permite modificar la contraseña del usuario"/>
+        <EditTextPreference
+            android:key="cam_correo"
+            android:title="Cambiar Correo"
+            android:summary="Permite modificar el correo del usuario"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Configuraciones de sesión ">
+        <CheckBoxPreference
+            android:key="man_sesion"
+            android:title="Mantener Sesión"
+            android:summary="Comtempla si se quiere mantener la sesión activa cuando se ingrese a la app"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Notificaciones">
+        <CheckBoxPreference
+            android:key="act_notificaciones"
+            android:title="Activar notificaciones"
+            android:summary="Define si se usarán notificaciones dentro de la app"
+            />
+        <CheckBoxPreference
+            android:key="son_notificaciones"
+            android:title="Sonido de la notificación"
+            android:summary="Define si se quiere recibir un sonido cuando se reciba una notificaciòn"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

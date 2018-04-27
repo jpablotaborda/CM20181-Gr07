@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical"
+tools:context="co.edu.udea.compumovil.gr07_20181.Activities.ven_platos"
+    >
+    <include layout="@layout/toolbar"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            >
+            <TextView
+                android:id="@+id/tit_reg_platos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/tit_reg_platos"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/nom_platoreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nom_platoreg"
+                android:layout_below="@id/tit_reg_platos"/>
+            <EditText
+                android:id="@+id/edit_nomreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/nom_platoreg"
+                android:layout_below="@id/tit_reg_platos"
+                android:layout_toRightOf="@id/nom_platoreg"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/radiogrplatoreg"
+                />
+
+            <TextView
+                android:id="@+id/horario_platoreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/horario_platoreg"
+                android:layout_below="@id/nom_platoreg"
+                android:layout_marginTop="10dp"/>
+            <CheckBox
+                android:id="@+id/horario_platocheckmanana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/horario_platocheckmanana"
+                android:layout_toRightOf="@id/horario_platoreg"
+                android:layout_alignTop="@id/horario_platoreg"/>
+            <CheckBox
+                android:id="@+id/horario_platochecktarde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/horario_platochecktarde"
+                android:layout_toRightOf="@id/horario_platocheckmanana"
+                android:layout_alignTop="@id/horario_platoreg"/>
+            <CheckBox
+                android:id="@+id/horario_platochecknoche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/horario_platochecknoche"
+                android:layout_toRightOf="@id/horario_platochecktarde"
+                android:layout_alignTop="@id/horario_platoreg" />
+            <TextView
+                android:id="@+id/tipoplatoreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tipoplatoreg"
+                android:layout_below="@id/horario_platochecknoche"/>
+            <RadioGroup
+                android:layout_marginLeft="18dp"
+                android:id="@+id/radiogrplatoreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@id/tipoplatoreg"
+                android:layout_alignTop="@id/tipoplatoreg">
+                <RadioButton
+                    android:id="@+id/tipoplatocheckentrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tipoplatocheckentrada"/>
+                <RadioButton
+                    android:id="@+id/tipoplatocheckplafuerte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tipoplatocheckplafuerte"/>
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/tiempre_platoreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tiempre_platoreg"
+                android:layout_below="@id/edit_ingredientesreg"
+                android:layout_marginTop="15dp"/>
+            <Button
+                android:id="@+id/bot_tiempre_platoreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bot_tiempre_platoreg"
+                android:layout_toRightOf="@id/tiempre_platoreg"
+                android:layout_alignBaseline="@id/tiempre_platoreg"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/precio_platoreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/precio_platoreg"
+                android:layout_below="@id/radiogrplatoreg"
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:id="@+id/edit_precioreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/precio_platoreg"
+                android:layout_below="@id/radiogrplatoreg"
+                android:layout_alignBaseline="@id/precio_platoreg"
+                />
+
+            <TextView
+                android:id="@+id/foto_platoreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/bot_tiempre_platoreg"
+                android:layout_below="@id/edit_ingredientesreg"
+                android:text="@string/foto_platoreg"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="150dp"/>
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/bot_foto_platoreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bot_foto_platoreg"
+                android:layout_toRightOf="@id/foto_platoreg"
+                android:layout_alignBaseline="@id/foto_platoreg"
+
+              />
+            <TextView
+                android:id="@+id/ingredientes_platoreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredientes_platoreg"
+                android:layout_below="@id/precio_platoreg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+            <EditText
+                android:id="@+id/edit_ingredientesreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ingredientes_platoreg"
+                />
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/bot_regplato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bot_regplato"
+                android:layout_below="@id/foto_platoreg"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

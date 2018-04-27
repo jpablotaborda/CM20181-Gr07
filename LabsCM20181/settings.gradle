@@ -1,2 +1,3 @@
 include ':Lab1-UI'
 include ':Lab2Activities'
+include ':Lab3Services'

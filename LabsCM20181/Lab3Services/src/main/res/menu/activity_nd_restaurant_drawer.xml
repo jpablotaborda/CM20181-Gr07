@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nd_plato"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/nd_plato" />
+        <item
+            android:id="@+id/nd_bebida"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/nd_bebida" />
+        <item
+            android:id="@+id/nd_perfil"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nd_perfil" />
+        <item
+            android:id="@+id/nd_configuracion"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nd_configuracion" />
+        <item
+            android:id="@+id/nd_cerrar_sesion"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nd_cerrar_sesion" />
+        <item
+            android:id="@+id/nd_acercade"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nd_acercade" />
+    </group>
+
+
+
+</menu>

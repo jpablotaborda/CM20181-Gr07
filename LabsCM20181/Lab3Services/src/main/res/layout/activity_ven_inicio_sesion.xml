@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.edu.udea.compumovil.gr07_20181.Activities.ven_inicio_sesion"
+    >
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+        <TextView
+
+            android:id="@+id/tit_inicio_ses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="@string/tit_inicio_ses"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/lbl_is_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_is_nombre"
+            android:layout_below="@id/tit_inicio_ses"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/nom_usu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lbl_is_nombre"
+            android:layout_alignBaseline="@id/lbl_is_nombre"/>
+        <TextView
+            android:id="@+id/lbl_is_contra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_is_contra"
+            android:layout_below="@id/lbl_is_nombre"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/contra_usu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lbl_is_contra"
+            android:layout_alignBaseline="@id/lbl_is_contra"/>
+        <Button
+            android:id="@+id/bot_inicio_ses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lbl_is_contra"
+            android:text="@string/bot_inicio_ses"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/sin_regis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sin_regis"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/bot_inicio_ses"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:id="@+id/bot_crear_cuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/sin_regis"
+            android:text="@string/bot_crear_cuenta"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

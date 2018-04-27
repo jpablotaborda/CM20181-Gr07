@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.edu.udea.compumovil.gr07_20181.Activities.ven_bebidas">
+
+    <include layout="@layout/toolbar"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tit_reg_bebidas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/registrar_Bebidas"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/nom_bebidareg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tit_reg_bebidas"
+                android:layout_marginTop="10dp"
+                android:text="@string/nombre_bebida" />
+
+            <EditText
+                android:id="@+id/edit_nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tit_reg_bebidas"
+                android:layout_toRightOf="@id/nom_bebidareg"
+                android:layout_alignBaseline="@id/nom_bebidareg"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/edit_ingredientes"/>
+
+            <TextView
+                android:id="@+id/ingredientes_bebidareg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nom_bebidareg"
+                android:layout_marginTop="20dp"
+                android:text="@string/ingredientes_bebidas" />
+
+            <EditText
+                android:id="@+id/edit_ingredientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nom_bebidareg"
+                android:layout_toRightOf="@id/ingredientes_bebidareg"
+                android:layout_alignBaseline="@id/ingredientes_bebidareg"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/edit_precio"/>
+
+            <TextView
+                android:id="@+id/precio_bebidareg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ingredientes_bebidareg"
+                android:layout_marginTop="20dp"
+                android:text="@string/precio_bebidas" />
+
+            <EditText
+                android:id="@+id/edit_precio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ingredientes_bebidareg"
+                android:layout_toRightOf="@+id/precio_bebidareg"
+                android:layout_alignBaseline="@id/precio_bebidareg" />
+
+            <TextView
+                android:id="@+id/foto_bebidareg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/precio_bebidareg"
+                android:layout_marginTop="30dp"
+                android:text="@string/foto_bebida" />
+
+            <Button
+                android:id="@+id/bot_foto_bebidareg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/precio_bebidareg"
+                android:layout_toRightOf="@id/foto_bebidareg"
+                android:layout_alignBaseline="@+id/foto_bebidareg"
+                android:layout_marginLeft="10dp"
+                android:text="@string/selec_precio_bebida" />
+
+            <Button
+                android:id="@+id/bot_regbebida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/precio_bebidareg"
+                android:layout_toRightOf="@id/bot_foto_bebidareg"
+                android:layout_alignBaseline="@+id/foto_bebidareg"
+                android:layout_marginLeft="150dp"
+                android:text="@string/bot_registrar_Bebida" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>
